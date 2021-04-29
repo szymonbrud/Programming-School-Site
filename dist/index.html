@@ -8,10 +8,53 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello world!!!</h1>
+    <nav class="header">
+      <img src="icons/titleName.svg" class="titleIcon" />
+      <div class="burger">
+        <div class="burgerLines burgerLine1"></div>
+        <div class="burgerLines burgerLine2"></div>
+        <div class="burgerLines burgerLine3"></div>
+      </div>
+    </nav>
+    <nav class="conatiner">
+      <div class="welcomePage">
+        <p class="headerText">Programming</p>
+        <p class="headerText">school in</p>
+        <p class="countryText headerText">Poland</p>
+        <button class="joinUs">join us</button>
+      </div>
+      <img class="sittingMan" src="icons/sittingMan.svg" />
+      <div class="language">
+        <p class="languageChoseText">Wybierz interesujący</p>
+        <p class="languageChoseText">cię język</p>
+
+        <div class="choseLanguageList">
+          <input type="text" id="custom-select" />
+          <img src="icons/languageListButton.svg" />
+          <ul class="allLanguages">
+            <li>JavaScript</li>
+            <li>JAVA</li>
+            <li>C++</li>
+            <li>Python</li>
+          </ul>
+          <!-- https://24ways.org/2019/making-a-better-custom-select-element/ -->
+        </div>
+        <!-- <select class="languageList">
+          <option>JavaScript</option>
+          <option>JAVA</option>
+          <option>C++</option>
+          <option>Python</option>
+        </select> -->
+      </div>
+    </nav>
     <script src="index.bundle.js"></script>
   </body>
 </html>

@@ -1,3 +1,87 @@
-body{
-  color: red;
+body {
+  font-family: 'Roboto Mono';
 }
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 62px;
+}
+.titleIcon {
+  margin-left: auto;
+  margin-right: auto;
+}
+.burger {
+  width: 20px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+.burgerLines {
+  background-color: #828282;
+  height: 2px;
+}
+.burgerLine1 {
+  width: 16px;
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+.burgerLine2 {
+  width: 14px;
+  height: 2px;
+  margin-bottom: 5px;
+}
+
+.burgerLine {
+  width: 20px;
+  height: 2px;
+}
+
+.welcomePage {
+  display: flex;
+  flex-direction: column;
+  width: 192px;
+  margin-left: 56px;
+  margin-top: 189px;
+}
+.headerText {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+.countryText {
+  color: #78dca6;
+  margin-bottom: 69px;
+}
+.joinUs {
+  font-family: 'Roboto ';
+  color: white;
+  font-size: 16px;
+  width: 107px;
+  height: 44px;
+  background-color: #78dca6;
+  border: 0px;
+  border-right: 3px solid #517b64;
+}
+.sittingMan {
+  margin-top: 136px;
+  margin-bottom: 54px;
+  margin-left: 50px;
+}
+.language {
+  display: flex;
+  flex-direction: column;
+}
+.languageChoseText {
+  margin: 0px;
+  text-align: center;
+}
+// .languageList {
+//   margin-left: 78px;
+//   width: 220px;
+//   height: 44px;
+//   margin-top: 55px;
+//   border-radius: 5px;
+//   border: 1px solid #929292;
+// }
