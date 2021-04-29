@@ -69,6 +69,12 @@ body {
   margin-bottom: 54px;
   margin-left: 50px;
 }
+.choseLanguageList {
+  width: 100%;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  background-color: #fafafa;
+}
 .language {
   display: flex;
   flex-direction: column;
@@ -76,12 +82,40 @@ body {
 .languageChoseText {
   margin: 0px;
   text-align: center;
+  font-size: 20px;
 }
-// .languageList {
-//   margin-left: 78px;
-//   width: 220px;
-//   height: 44px;
-//   margin-top: 55px;
-//   border-radius: 5px;
-//   border: 1px solid #929292;
-// }
+
+.languageFlexButton {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+  border: 1px solid #929292;
+  border-radius: 5px;
+  width: 218px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.choseLanguageText {
+  color: #585757;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.choseLanguageButton {
+  width: 19px;
+  height: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.allLanguages {
+  width: 218px;
+  // display: none;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #929292;
+  padding: 0px;
+}

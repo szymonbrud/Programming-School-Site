@@ -1,3 +1,3 @@
 import '../scss/main.scss';
 
-console.log('hello world!');
+let allProgrammingLanguages = document.querySelector('.allLanguages');
