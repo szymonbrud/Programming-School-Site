@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 192px;
-  margin-left: 10%;
+  margin-left: 17%;
   margin-top: 189px;
 }
 .headerText {
@@ -81,6 +81,7 @@ body {
 .language {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .languageChoseText {
   margin: 0px;
@@ -89,24 +90,34 @@ body {
 }
 
 .languageFlexButton {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 55px;
   border: 1px solid #929292;
   border-radius: 5px;
   width: 218px;
   display: flex;
-  flex-direction: row;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 55px;
+  height: 44px;
+  overflow: hidden;
 }
 .choseLanguageText {
   color: #585757;
   font-size: 18px;
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 45px;
 }
+
+.mainOptions{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  flex-shrink: 0;
+  position: relative;
+  top: -2px;
+}
+
 .choseLanguageIcon {
   width: 19px;
   height: 19px;
@@ -115,19 +126,15 @@ body {
   transition-duration: 1s;
 }
 
-.allLanguages {
-  width: 188px;
-  display: none;
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #929292;
-  border-top: 0px;
-  padding-left: 0px;
-}
+
 .languagesList {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  border: 1px solid #92929292;
+  
+  margin: 22px 0 0 45px;
+  color: #929292;
+  position: relative;
+  z-index: 10px;
+
+  &:first-child{
+    margin-top: 37px 0 0 45px;
+  }
 }
