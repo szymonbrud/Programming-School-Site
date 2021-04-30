@@ -1,16 +1,45 @@
 body {
   font-family: 'Roboto Mono';
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 .header {
   display: flex;
   flex-direction: row;
   margin-top: 62px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 .titleIcon {
   margin-left: auto;
   margin-right: auto;
 }
+
+.heroContainer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sittingMan {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rectangleIcon{
+  position: absolute;
+  right: -5%;
+  top: 40%;
+}
+
 .burger {
   width: 20px;
   height: 16px;
@@ -44,7 +73,8 @@ body {
   flex-direction: column;
   width: 192px;
   margin-left: 17%;
-  margin-top: 189px;
+  position: relative;
+  z-index: 10;
 }
 .headerText {
   margin-top: 0;
@@ -65,18 +95,13 @@ body {
   border: 0px;
   border-right: 3px solid #517b64;
 }
-.sittingMan {
-  margin-top: 136px;
-  margin-bottom: 54px;
-  margin-left: 10%;
-  width: 80%;
-  height: 80%;
-}
+
 .choseLanguageList {
   width: 100%;
   padding-top: 77px;
   padding-bottom: 77px;
   background-color: #fafafa;
+  margin: 54px 0 0 0;
 }
 .language {
   display: flex;
@@ -140,7 +165,8 @@ body {
 }
 
 .aboutWrapper{
-  padding: 63px 33px 63px;
+  box-sizing: border-box;
+  padding: 82px 33px 127px;
   background: white;
 }
 
@@ -167,4 +193,153 @@ body {
   justify-content: center;
   text-decoration: none;
   border-right: 5px solid #932020;
+}
+
+footer{
+  background-color: #78dca6;
+  width: 100%;
+  padding: 0 29px 100px;
+  box-sizing: border-box;
+}
+
+.footerLogoWrapper{
+  height: 68px;
+  width: 164px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerTitle{
+  font-size: 24px;
+  margin: 100px 0 57px 0;
+  font-weight: 400;
+  width: 80%;
+}
+
+.formNameSection{
+  font-size: 18px;
+  margin: 30px 0 10px;
+}
+
+
+form{
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.formFlexWrapper{
+  display: flex;
+  gap: 14px;
+  width: calc(100%);
+}
+
+
+.input{
+  height: 56px;
+  border: 1px solid #517B64;
+  background-color: white;
+  width: 50%;
+  padding: 0 0 0 31px;
+  box-sizing: border-box;
+  font-size: 18px;
+
+  &::-webkit-input-placeholder{
+    font-size: 18px;
+    color: #B3C5BB;
+  }
+
+  &::-moz-placeholder{
+    font-size: 18px;
+    color: #B3C5BB;
+    
+  }
+
+  &:-ms-input-placeholder{
+    font-size: 18px;
+    color: #B3C5BB;
+    
+  }
+
+  &::-ms-input-placeholder{
+    font-size: 18px;
+    color: #B3C5BB;
+    
+  }
+
+  &::placeholder{
+    font-size: 18px;
+    color: #B3C5BB;
+    
+  }
+
+  &:focus{
+    border: 2px solid #155C35;
+    outline: 0;
+  }
+}
+
+.day{
+  width: 25%;
+  padding: 0;
+  text-align: center;
+}
+
+.month{
+  width: 35%;
+  padding: 0;
+  text-align: center;
+};
+
+.year{
+  width: 40%;
+  padding: 0;
+  text-align: center;
+}
+
+.email{
+  width: 100%;
+}
+
+.tel{
+  width: 100%;
+}
+
+.footerFormSendButton{
+  width: 136px;
+  height: 56px;
+  color: white;
+  // background-color: #517B64;
+  background-color: #6FF0AA;
+  border: 1px solid #569A75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 55px 0 0;
+
+  &:disabled{
+    background-color: #517B64;
+    border: 0;
+  }
+}
+
+.footerTextUnderForm{
+  margin: 60px 0 13px 0;
+}
+
+.footerEmail{
+  color: black;
+  font-weight: 700;
+}
+
+.socialsWrapper{
+  margin: 66px 0 0 0;
+}
+
+.socialsWrapper a{
+  text-decoration: none;
 }

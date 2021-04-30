@@ -1,8 +1,9 @@
-import '../scss/main.scss';
-
 import gsap from 'gsap';
 
+import '../scss/main.scss';
+
 import secrets from '../assets/secrets';
+import contactForm from '../assets/contactForm';
 
 const choseLanguageText = document.querySelector('.choseLanguageText');
 const languageButton = document.querySelector('.languageFlexButton');
@@ -90,4 +91,8 @@ languageButton.addEventListener('click', () => {
     });
   }
   isProgrammingListOpen = !isProgrammingListOpen;
+});
+
+window.addEventListener('load', () => {
+  contactForm();
 });
