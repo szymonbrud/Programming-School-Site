@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/assets/secrets.js":
+/*!*******************************!*\
+  !*** ./src/assets/secrets.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n  api: 'https://api-eu-central-1.graphcms.com/v2/cko35b86ofr4r01xt3obkcda5/master'\n});\n\n//# sourceURL=webpack://webapp_files_server/./src/assets/secrets.js?");
+
+/***/ }),
+
 /***/ "./src/main/indexPage.js":
 /*!*******************************!*\
   !*** ./src/main/indexPage.js ***!
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n\nconsole.log('hello world!');\n\n//# sourceURL=webpack://webapp_files_server/./src/main/indexPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _assets_secrets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/secrets */ \"./src/assets/secrets.js\");\n\n\nconsole.log('hello world!');\nfetch(_assets_secrets__WEBPACK_IMPORTED_MODULE_1__.default.api, {\n  method: 'POST',\n  body: JSON.stringify({\n    query: \"query{\\n      courses{\\n        title\\n      }\\n    }\",\n    variables: {\n      id: 1\n    }\n  })\n}).then(function (res) {\n  return res.json();\n}).then(function (res) {\n  return console.log(res);\n})[\"catch\"](function (e) {\n  return Error(e);\n});\n\n//# sourceURL=webpack://webapp_files_server/./src/main/indexPage.js?");
 
 /***/ }),
 
