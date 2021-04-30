@@ -138,3 +138,33 @@ body {
     margin-top: 37px 0 0 45px;
   }
 }
+
+.aboutWrapper{
+  padding: 63px 33px 63px;
+  background: white;
+}
+
+.aboutTitle{
+  font-size: 24px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.aboutDesc{
+  margin: 35px 0 0 0;
+  font-size: 16px;
+}
+
+.aboutLink{
+  margin: 35px 0 0 0;
+  width: 167px;
+  font-size: 18px;
+  background: #FF3333;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-right: 5px solid #932020;
+}
