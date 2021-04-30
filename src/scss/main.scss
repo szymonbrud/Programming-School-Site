@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto Mono';
+  margin: 0 auto;
 }
 .header {
   display: flex;
@@ -42,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 192px;
-  margin-left: 56px;
+  margin-left: 10%;
   margin-top: 189px;
 }
 .headerText {
@@ -67,7 +68,9 @@ body {
 .sittingMan {
   margin-top: 136px;
   margin-bottom: 54px;
-  margin-left: 50px;
+  margin-left: 10%;
+  width: 80%;
+  height: 80%;
 }
 .choseLanguageList {
   width: 100%;
@@ -104,18 +107,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.choseLanguageButton {
+.choseLanguageIcon {
   width: 19px;
   height: 19px;
   margin-left: auto;
   margin-right: auto;
+  transition-duration: 1s;
 }
+
 .allLanguages {
-  width: 218px;
-  // display: none;
+  width: 188px;
+  display: none;
   list-style: none;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #929292;
-  padding: 0px;
+  border-top: 0px;
+  padding-left: 0px;
+}
+.languagesList {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  border: 1px solid #92929292;
 }
