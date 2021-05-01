@@ -345,17 +345,48 @@ body {
   box-sizing: border-box;
   padding: 82px 33px 127px;
   background: white;
+
+  @media($desktop){
+    padding: 200px 0;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.aboutLeftWrapper{
+  @media($desktop){
+    width: 35%;
+  }
+}
+
+.aboutImage{
+  display: none;
+  @media($desktop){
+    display: block;
+    width: 40%;
+  }
 }
 
 .aboutTitle{
   font-size: 24px;
   margin: 0;
   font-weight: 400;
+
+  @media($desktop){
+    font-size: 40px;
+  }
 }
 
 .aboutDesc{
   margin: 35px 0 0 0;
   font-size: 16px;
+
+  @media($desktop){
+    font-size: 18px;
+    margin: 52px 0 0 0;
+  }
 }
 
 .aboutLink{
@@ -370,6 +401,13 @@ body {
   justify-content: center;
   text-decoration: none;
   border-right: 5px solid #932020;
+
+  @media($desktop){
+    margin: 75px 0 0 0;
+    width: 203px;
+    height: 58px;
+    font-size: 24px;
+  }
 }
 
 footer{
