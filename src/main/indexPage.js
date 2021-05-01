@@ -1,9 +1,11 @@
 import gsap from 'gsap';
 
 import '../scss/main.scss';
+import '../scss/menuPhone.scss';
 
 import secrets from '../assets/secrets';
 import contactForm from '../assets/contactForm';
+import menuPhone from '../assets/menuPhone';
 
 const choseLanguageText = document.querySelector('.choseLanguageText');
 const languageButton = document.querySelector('.languageFlexButton');
@@ -95,4 +97,5 @@ languageButton.addEventListener('click', () => {
 
 window.addEventListener('load', () => {
   contactForm();
+  menuPhone();
 });
