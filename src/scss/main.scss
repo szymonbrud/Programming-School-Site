@@ -90,6 +90,7 @@ body {
   align-items: center;
   justify-content: center;
   border-right: #517B64 solid 3px;
+  text-align: center;
 }
 
 .heroContainer{
@@ -230,16 +231,55 @@ body {
   padding-bottom: 77px;
   background-color: #fafafa;
   margin: 54px 0 0 0;
+  // height: 315px;
+
+  @media ($desktop) {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+  }
 }
+
+.languageLeftWrapper{
+  @media ($desktop) {
+    margin-right: 100px;
+  }
+}
+
+.languageImage{
+  
+  display: none;
+  @media ($desktop) {
+    width: 25%;
+    display: block;
+    
+  }
+}
+
 .language {
   display: flex;
   flex-direction: column;
   align-items: center;
+  // height: 315px;
+
+  @media($desktop) {
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+  }
 }
 .languageChoseText {
   margin: 0px;
   text-align: center;
   font-size: 20px;
+
+  @media ($desktop) {
+    text-align: start;
+    font-size: 40px;
+  }
 }
 
 .languageFlexButton {
@@ -252,12 +292,21 @@ body {
   margin-top: 55px;
   height: 44px;
   overflow: hidden;
+  position: relative;
+
+  @media ($desktop) {
+    position: absolute;
+  }
 }
 .choseLanguageText {
   color: #585757;
   font-size: 18px;
   margin: 0 auto;
   margin-left: 45px;
+}
+
+.languagePositionWrapper{
+  position: relative;
 }
 
 .mainOptions{
