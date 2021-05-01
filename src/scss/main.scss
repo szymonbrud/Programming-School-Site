@@ -415,6 +415,14 @@ footer{
   width: 100%;
   padding: 0 29px 100px;
   box-sizing: border-box;
+
+  @media($desktop){
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    padding: 0;
+  }
+
 }
 
 .footerLogoWrapper{
@@ -424,6 +432,14 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media($desktop) {
+    grid-row: 1/6;
+    grid-column: 1/2;
+    margin: 0 0 0 10%;
+    width: 231px;
+    height: 92px;
+  }
 }
 
 .footerTitle{
@@ -431,6 +447,10 @@ footer{
   margin: 100px 0 57px 0;
   font-weight: 400;
   width: 80%;
+
+  @media ($desktop) {
+    display: none;
+  }
 }
 
 .formNameSection{
@@ -443,6 +463,23 @@ form{
   width:100%;
   margin: 0;
   padding: 0;
+  @media ($desktop) {
+    width: 318px;
+  }
+}
+
+.footerFormWrapper{
+  @media($desktop) {
+    background-color: #F3F3F3;
+    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 144px;
+  }
 }
 
 .formFlexWrapper{
@@ -544,15 +581,38 @@ form{
 
 .footerTextUnderForm{
   margin: 60px 0 13px 0;
+  @media ($desktop) {
+    grid-column: 1 / 6;
+    grid-row: 1/6;
+    // grid-row: ;
+    font-size: 14px;
+    margin: 30% 0 13px 5%;
+    width: 100%;
+    display: none;
+  }
 }
 
 .footerEmail{
   color: black;
   font-weight: 700;
+  @media ($desktop) {
+    grid-column: 1 / 2;
+    grid-row: 1/6;
+    font-size: 14px;
+    margin: 65% 0 0 10%;
+    display: none;
+  }
 }
 
 .socialsWrapper{
   margin: 66px 0 0 0;
+  
+  @media ($desktop) {
+    grid-column: 1 / 2;
+    grid-row: 1/6;
+    margin: 90% 0 0 10%;
+    display: none;
+  }
 }
 
 .socialsWrapper a{
@@ -588,4 +648,43 @@ form{
   font-weight: 500;
   font-family: 'Roboto Mono';
   margin: 11px 0 0 27px;
+}
+
+.footerDesktopInformationWrapper{
+  display: none;
+  
+  @media($desktop){
+    grid-column: 1/2;
+    grid-row: 1/6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footerDesktopTitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 0 10%;
+  width: 90%;
+}
+
+.footerDesktopCanNotSend{
+  margin: 71px 0 0 10%;
+}
+
+.footerDesktopEmail{
+  margin: 11px 0 0 10%;
+  color: black;
+  font-weight: 800;
+}
+
+.footerDesktopSocialsWrapper{
+  margin: 151px 0 0 10%;
+}
+
+.footerDesktopSocialsWrapper a{
+  text-decoration: none;
 }
