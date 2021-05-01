@@ -1,3 +1,5 @@
+@import './media.scss';
+
 body {
   font-family: 'Roboto Mono';
   margin: 0;
@@ -12,10 +14,82 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
+
+  @media ($desktop) {
+    display: none;
+  }
 }
 .titleIcon {
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.menuDesktopWrapper{
+  display: none;
+
+  @media ($desktop) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    top: 81px;
+    left: 0;
+  }
+}
+
+.desktopHeroIconsWrapper{
+  display: none;
+  
+  @media ($desktop) {
+    margin: 0 0 0 20%;
+    position: relative;
+    top: 10%;
+    display: block;
+  }
+}
+
+.desktopHeroIconsWrapper a{
+  text-decoration: none;
+}
+
+.menuItemsWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 109px;
+  padding: 0;
+}
+
+.menuItemDesktop{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItemLink{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin: 0 32px 0 0;
+}
+
+.menuItemTryFree{
+  margin: 0;
+  width: 109px;
+  height: 44px;
+  background-color: #78DCA6;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: #517B64 solid 3px;
 }
 
 .heroContainer{
@@ -25,6 +99,24 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+
+  @media($desktop){
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.backgroundDesktopImg{
+  display: none;
+
+  @media($desktop){
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: block;
+    height: 100%;
+    width: 50%;
+  }
 }
 
 .sittingMan {
@@ -32,12 +124,20 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media($desktop){
+    display: none;
+  }
 }
 
 .rectangleIcon{
   position: absolute;
   right: -5%;
   top: 40%;
+
+  @media($desktop){
+    display: none;
+  }
 }
 
 .burger {
@@ -72,19 +172,39 @@ body {
   display: flex;
   flex-direction: column;
   width: 192px;
-  margin-left: 17%;
+  margin-left: 30%;
   position: relative;
   z-index: 10;
+  font-size: 24px;
+  
+  @media ($desktop) {
+    font-size: 54px;
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 20%;
+  }
 }
 .headerText {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 24px;
 }
 .countryText {
   color: #78dca6;
   margin-bottom: 69px;
 }
+
+.leftSideWrapper{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .joinUs {
   font-family: 'Roboto ';
   color: white;
@@ -94,6 +214,14 @@ body {
   background-color: #78dca6;
   border: 0px;
   border-right: 3px solid #517b64;
+
+  @media ($desktop) {
+    width: 203px;
+    height: 58px;
+    border-right: 5px solid #517b64;
+    font-size: 24px;
+    font-family: 'Roboto Mono';
+  }
 }
 
 .choseLanguageList {
