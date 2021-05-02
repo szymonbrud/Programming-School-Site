@@ -2,6 +2,7 @@ import '../scss/menuPhone.scss';
 import '../scss/topBarMenuPhone.scss';
 import '../scss/courses.scss';
 import '../scss/footer.scss';
+import '../scss/topBarMenuDesktop.scss';
 
 import menuPhone from '../assets/menuPhone';
 import secrets from '../assets/secrets';
