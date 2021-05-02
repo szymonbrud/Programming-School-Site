@@ -24,8 +24,7 @@ body {
   margin-right: auto;
 }
 
-
-.menuDesktopWrapper{
+.menuDesktopWrapper {
   display: none;
 
   @media ($desktop) {
@@ -40,9 +39,9 @@ body {
   }
 }
 
-.desktopHeroIconsWrapper{
+.desktopHeroIconsWrapper {
   display: none;
-  
+
   @media ($desktop) {
     margin: 0 0 0 20%;
     position: relative;
@@ -51,11 +50,11 @@ body {
   }
 }
 
-.desktopHeroIconsWrapper a{
+.desktopHeroIconsWrapper a {
   text-decoration: none;
 }
 
-.menuItemsWrapper{
+.menuItemsWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,14 +62,14 @@ body {
   padding: 0;
 }
 
-.menuItemDesktop{
+.menuItemDesktop {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menuItemLink{
+.menuItemLink {
   text-decoration: none;
   color: black;
   font-weight: 300;
@@ -79,21 +78,21 @@ body {
   margin: 0 32px 0 0;
 }
 
-.menuItemTryFree{
+.menuItemTryFree {
   margin: 0;
   width: 109px;
   height: 44px;
-  background-color: #78DCA6;
+  background-color: #78dca6;
   color: white;
   font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: #517B64 solid 3px;
+  border-right: #517b64 solid 3px;
   text-align: center;
 }
 
-.heroContainer{
+.heroContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -101,17 +100,17 @@ body {
   position: relative;
   overflow: hidden;
 
-  @media($desktop){
+  @media ($desktop) {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.backgroundDesktopImg{
+.backgroundDesktopImg {
   display: none;
 
-  @media($desktop){
-    background-image: url("./background.png");
+  @media ($desktop) {
+    background-image: url('./background.png');
     background-repeat: no-repeat;
     background-position-x: center;
     display: block;
@@ -126,17 +125,17 @@ body {
   left: 50%;
   transform: translateX(-50%);
 
-  @media($desktop){
+  @media ($desktop) {
     display: none;
   }
 }
 
-.rectangleIcon{
+.rectangleIcon {
   position: absolute;
   right: -5%;
   top: 40%;
 
-  @media($desktop){
+  @media ($desktop) {
     display: none;
   }
 }
@@ -177,7 +176,7 @@ body {
   position: relative;
   z-index: 10;
   font-size: 24px;
-  
+
   @media ($desktop) {
     font-size: 54px;
     width: 50%;
@@ -198,7 +197,7 @@ body {
   margin-bottom: 69px;
 }
 
-.leftSideWrapper{
+.leftSideWrapper {
   width: 50%;
   height: 100%;
   display: flex;
@@ -242,19 +241,17 @@ body {
   }
 }
 
-.languageLeftWrapper{
+.languageLeftWrapper {
   @media ($desktop) {
     margin-right: 100px;
   }
 }
 
-.languageImage{
-  
+.languageImage {
   display: none;
   @media ($desktop) {
     width: 25%;
     display: block;
-    
   }
 }
 
@@ -264,7 +261,7 @@ body {
   align-items: center;
   // height: 315px;
 
-  @media($desktop) {
+  @media ($desktop) {
     align-items: flex-start;
     justify-content: center;
     position: relative;
@@ -305,11 +302,11 @@ body {
   margin-left: 45px;
 }
 
-.languagePositionWrapper{
+.languagePositionWrapper {
   position: relative;
 }
 
-.mainOptions{
+.mainOptions {
   width: 100%;
   display: flex;
   align-items: center;
@@ -328,72 +325,70 @@ body {
   transition-duration: 1s;
 }
 
-
 .languagesList {
-  
   margin: 22px 0 0 45px;
   color: #929292;
   position: relative;
   z-index: 10px;
 
-  &:first-child{
+  &:first-child {
     margin-top: 37px 0 0 45px;
   }
 }
 
-.aboutWrapper{
+.aboutWrapper {
   box-sizing: border-box;
   padding: 82px 33px 127px;
   background: white;
 
-  @media($desktop){
+  @media ($desktop) {
     padding: 200px 0;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-.aboutLeftWrapper{
-  @media($desktop){
+.aboutLeftWrapper {
+  @media ($desktop) {
     width: 35%;
   }
 }
 
-.aboutImage{
+.aboutImage {
   display: none;
-  @media($desktop){
+  @media ($desktop) {
     display: block;
     width: 40%;
   }
 }
 
-.aboutTitle{
+.aboutTitle {
   font-size: 24px;
   margin: 0;
   font-weight: 400;
 
-  @media($desktop){
+  @media ($desktop) {
     font-size: 40px;
   }
 }
 
-.aboutDesc{
+.aboutDesc {
   margin: 35px 0 0 0;
   font-size: 16px;
 
-  @media($desktop){
+  @media ($desktop) {
     font-size: 18px;
     margin: 52px 0 0 0;
   }
 }
 
-.aboutLink{
+.aboutLink {
   margin: 35px 0 0 0;
   width: 167px;
   font-size: 18px;
-  background: #FF3333;
+  background: #ff3333;
   color: white;
   height: 50px;
   display: flex;
@@ -402,7 +397,7 @@ body {
   text-decoration: none;
   border-right: 5px solid #932020;
 
-  @media($desktop){
+  @media ($desktop) {
     margin: 75px 0 0 0;
     width: 203px;
     height: 58px;
@@ -410,22 +405,21 @@ body {
   }
 }
 
-footer{
+footer {
   background-color: #78dca6;
   width: 100%;
   padding: 0 29px 100px;
   box-sizing: border-box;
 
-  @media($desktop){
+  @media ($desktop) {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
     padding: 0;
   }
-
 }
 
-.footerLogoWrapper{
+.footerLogoWrapper {
   height: 68px;
   width: 164px;
   background-color: white;
@@ -433,7 +427,7 @@ footer{
   align-items: center;
   justify-content: center;
 
-  @media($desktop) {
+  @media ($desktop) {
     grid-row: 1/6;
     grid-column: 1/2;
     margin: 0 0 0 10%;
@@ -442,7 +436,7 @@ footer{
   }
 }
 
-.footerTitle{
+.footerTitle {
   font-size: 24px;
   margin: 100px 0 57px 0;
   font-weight: 400;
@@ -453,14 +447,13 @@ footer{
   }
 }
 
-.formNameSection{
+.formNameSection {
   font-size: 18px;
   margin: 30px 0 10px;
 }
 
-
-form{
-  width:100%;
+form {
+  width: 100%;
   margin: 0;
   padding: 0;
   @media ($desktop) {
@@ -468,9 +461,9 @@ form{
   }
 }
 
-.footerFormWrapper{
-  @media($desktop) {
-    background-color: #F3F3F3;
+.footerFormWrapper {
+  @media ($desktop) {
+    background-color: #f3f3f3;
     height: 100%;
     grid-column: 2 / 3;
     grid-row: 1/6;
@@ -482,90 +475,85 @@ form{
   }
 }
 
-.formFlexWrapper{
+.formFlexWrapper {
   display: flex;
   gap: 14px;
   width: calc(100%);
 }
 
-
-.input{
+.input {
   height: 56px;
-  border: 1px solid #517B64;
+  border: 1px solid #517b64;
   background-color: white;
   width: 50%;
   padding: 0 0 0 31px;
   box-sizing: border-box;
   font-size: 18px;
 
-  &::-webkit-input-placeholder{
+  &::-webkit-input-placeholder {
     font-size: 18px;
-    color: #B3C5BB;
+    color: #b3c5bb;
   }
 
-  &::-moz-placeholder{
+  &::-moz-placeholder {
     font-size: 18px;
-    color: #B3C5BB;
-    
+    color: #b3c5bb;
   }
 
-  &:-ms-input-placeholder{
+  &:-ms-input-placeholder {
     font-size: 18px;
-    color: #B3C5BB;
-    
+    color: #b3c5bb;
   }
 
-  &::-ms-input-placeholder{
+  &::-ms-input-placeholder {
     font-size: 18px;
-    color: #B3C5BB;
-    
+    color: #b3c5bb;
   }
 
-  &::placeholder{
+  &::placeholder {
     font-size: 18px;
-    color: #B3C5BB;
-    
+    color: #b3c5bb;
   }
 
-  &:focus{
-    border: 2px solid #155C35;
+  &:focus {
+    border: 2px solid #155c35;
     outline: 0;
   }
 }
 
-.day{
+.day {
   width: 25%;
   padding: 0;
   text-align: center;
 }
 
-.month{
+.month {
   width: 35%;
   padding: 0;
   text-align: center;
-};
+}
 
-.year{
+.year {
   width: 40%;
   padding: 0;
   text-align: center;
 }
 
-.email{
+.email {
   width: 100%;
 }
 
-.tel{
+.tel {
   width: 100%;
 }
 
-.footerFormSendButton{
+.footerFormSendButton {
   width: 136px;
   height: 56px;
   color: white;
   // background-color: #517B64;
-  background-color: #6FF0AA;
-  border: 1px solid #569A75;
+  background-color: #6ff0aa;
+  border: 1px solid #569a75;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,13 +561,13 @@ form{
   font-weight: 400;
   margin: 55px 0 0;
 
-  &:disabled{
-    background-color: #517B64;
+  &:disabled {
+    background-color: #517b64;
     border: 0;
   }
 }
 
-.footerTextUnderForm{
+.footerTextUnderForm {
   margin: 60px 0 13px 0;
   @media ($desktop) {
     grid-column: 1 / 6;
@@ -592,7 +580,7 @@ form{
   }
 }
 
-.footerEmail{
+.footerEmail {
   color: black;
   font-weight: 700;
   @media ($desktop) {
@@ -604,9 +592,9 @@ form{
   }
 }
 
-.socialsWrapper{
+.socialsWrapper {
   margin: 66px 0 0 0;
-  
+
   @media ($desktop) {
     grid-column: 1 / 2;
     grid-row: 1/6;
@@ -615,7 +603,7 @@ form{
   }
 }
 
-.socialsWrapper a{
+.socialsWrapper a {
   text-decoration: none;
 }
 .choseLevelMotivatonLanguage {
@@ -634,6 +622,7 @@ form{
   background-color: #fafafa;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 36px;
 }
 .level {
   text-align: center;
@@ -650,10 +639,10 @@ form{
   margin: 11px 0 0 27px;
 }
 
-.footerDesktopInformationWrapper{
+.footerDesktopInformationWrapper {
   display: none;
-  
-  @media($desktop){
+
+  @media ($desktop) {
     grid-column: 1/2;
     grid-row: 1/6;
     display: flex;
@@ -671,20 +660,20 @@ form{
   width: 90%;
 }
 
-.footerDesktopCanNotSend{
+.footerDesktopCanNotSend {
   margin: 71px 0 0 10%;
 }
 
-.footerDesktopEmail{
+.footerDesktopEmail {
   margin: 11px 0 0 10%;
   color: black;
   font-weight: 800;
 }
 
-.footerDesktopSocialsWrapper{
+.footerDesktopSocialsWrapper {
   margin: 151px 0 0 10%;
 }
 
-.footerDesktopSocialsWrapper a{
+.footerDesktopSocialsWrapper a {
   text-decoration: none;
 }
