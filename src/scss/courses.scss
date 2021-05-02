@@ -1,0 +1,71 @@
+body {
+  font-family: 'Roboto Mono';
+  margin: 0;
+}
+
+.mainWrapper{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 27px 100px;
+  margin-top: 181px;
+}
+
+.coursesWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.courseElementWrapper{
+  border: 1px solid #929292;
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 76px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+}
+
+.courseElementTitle{
+  margin: 17px 0 0 24px;
+  width: calc(100% - 120px);
+  font-size: 16px;
+}
+
+.courseElementImage{
+  width: 76px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 76px;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.courseElementDesc{
+  margin: 30px 0 0 24px;
+  width: 90%;
+}
+
+.courseElementPrice{
+  margin: 15px 0 0 24px;
+}
+
+.courseElementButton{
+  width: 133px;
+  height: 45px;
+  background-color: #78DCA6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 20px 0 0 24px;
+  border-radius: 2px;
+}

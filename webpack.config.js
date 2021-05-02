@@ -4,6 +4,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/main/indexPage.js',
+    courses: './src/main/coursesPage.js',
   },
   module: {
     rules: [
