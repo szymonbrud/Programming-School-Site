@@ -5,6 +5,7 @@ module.exports = {
   entry: {
     index: './src/main/indexPage.js',
     courses: './src/main/coursesPage.js',
+    about: './src/main/aboutPage.js',
   },
   module: {
     rules: [
