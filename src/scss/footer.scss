@@ -173,6 +173,12 @@ footer{
   width: 100%;
 }
 
+form{
+  @media($desktop){
+    width: 318px;
+  }
+}
+
 .footerFormSendButton{
   width: 136px;
   height: 56px;

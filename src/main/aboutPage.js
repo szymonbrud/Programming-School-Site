@@ -11,16 +11,19 @@ const aboutArticles = [
     title: 'Nasza kadra nauczycielska',
     desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. ',
+    imgPath: 'aboutPhoto1.png',
   },
   {
     title: 'Zdalne Nauczanie',
     desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. ',
+    imgPath: 'aboutPhoto2.jpg',
   },
   {
     title: 'Współpraca',
     desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. ',
+    imgPath: 'aboutPhoto3.png',
   },
 ];
 
@@ -31,7 +34,12 @@ const generateTheArticles = () => {
 
   aboutArticles.forEach((aboutArticleElement, index) => {
     const HTML = `
-      <article class="aboutBoxWrapper ${index % 2 && 'aboutBoxWrapperSecound'}">
+    <div style="grid-column: ${index % 2 ? '2/3' : '1/2'}; grid-row: ${index + 1}/${
+      index + 2
+    }; background-image: url(./images/${aboutArticleElement.imgPath});" class="aboutBoxImage"></div>
+      <article class="aboutBoxWrapper ${
+        index % 2 && 'aboutBoxWrapperSecound'
+      }" style="grid-column: ${index % 2 ? '1/2' : '2/3'}">
         <h5 class="aboutBoxTitle">${aboutArticleElement.title}</h5>
         <p class="aboutBoxDesc">${aboutArticleElement.desc}</p>
         <span class="aboutBoxNumber">${index + 1}</span>
