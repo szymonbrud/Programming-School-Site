@@ -2,13 +2,16 @@ import gsap from 'gsap';
 
 import '../scss/main.scss';
 import '../scss/menuPhone.scss';
+import '../scss/prices.scss';
 
 import secrets from '../assets/secrets';
 import contactForm from '../assets/contactForm';
 import menuPhone from '../assets/menuPhone';
+import { map } from 'lodash';
 
 const choseLanguageText = document.querySelector('.choseLanguageText');
 const languageButton = document.querySelector('.languageFlexButton');
+const coursesClipBoard = document.querySelector('.coursesClipBoard');
 
 let courses = null;
 let languages = [];
@@ -24,6 +27,7 @@ const editListOfProgrammingHTML = (list) => {
   });
 
   const languagesList = document.querySelectorAll('.languagesList');
+  let levelText = document.querySelector('.choseLevelMotivatonLanguage');
 
   languagesList.forEach((languagesListElement) => {
     languagesListElement.addEventListener('click', () => {
@@ -37,9 +41,9 @@ const editListOfProgrammingHTML = (list) => {
 
       languagesWithoutSelectedOption.splice(indexToDelete, 1);
       editListOfProgrammingHTML(languagesWithoutSelectedOption);
-      //początek
 
       let levels = document.querySelector('.levels');
+      levelText.style.display = 'block';
       levels.innerHTML = '';
       fetch(secrets.api, {
         method: 'POST',
@@ -58,25 +62,63 @@ const editListOfProgrammingHTML = (list) => {
         .then((res) => res.json())
         .then((res) => {
           console.log(res);
+
+          let currentTargetArr = [];
           res.data.offersByLvls.forEach((arg) => {
             let allText = '';
             const text = arg.willLearn.split('\n');
             text.forEach((textElement) => {
               allText += `<p class="willLearn">-${textElement}</p>`;
             });
+
             if (languages[indexToDelete] === arg.programmingLanguage) {
               levels.innerHTML +=
-                '<div class="contentContainer"><p class = "level">' +
+                `<div class="contentContainer" id="${arg.level}"><p class = "level">` +
                 arg.level +
                 '</p>' +
                 '<p>' +
                 allText +
                 '</p>';
+
+              let levelsArray = [];
+              const levelButton = document.querySelectorAll('.contentContainer');
+              levelButton.forEach((levelBut) => {
+                levelBut.addEventListener('click', (event) => {
+                  coursesClipBoard.innerHTML = '';
+                  levelsArray.push(event.currentTarget.id);
+                  currentTargetArr.push(event.currentTarget);
+
+                  if (levelsArray[0] != event.currentTarget.id) {
+                    currentTargetArr[0].classList.remove('active');
+                    levelsArray.splice(0, 1);
+                    currentTargetArr.splice(0, 1);
+                  }
+                  event.currentTarget.classList.add('active');
+                  courses.forEach((coursesEach) => {
+                    if (
+                      coursesEach.level === levelsArray[0] &&
+                      arg.programmingLanguage === coursesEach.programmingLanguage
+                    ) {
+                      coursesClipBoard.innerHTML +=
+                        '<div class="coursesButton"><p class="coursesTitle">' +
+                        coursesEach.title +
+                        '</p>' +
+                        '<p class="coursesPrice">' +
+                        coursesEach.price +
+                        'zł' +
+                        '</p>' +
+                        `<p class="coursesDesc">${coursesEach.desc}...</p>` +
+                        `<div class="coursesImage" style="background-image:url("${coursesEach.image.url}");"></div>` +
+                        '<button class="showMoreCourses">Zapisz się</button>' +
+                        '</div>';
+                    }
+                  });
+                });
+              });
             }
           });
         })
         .catch((e) => Error(e));
-      //koniec
     });
   });
 };
@@ -93,7 +135,8 @@ fetch(secrets.api, {
             url,
           },
           level,
-          programmingLanguage
+          programmingLanguage,
+          price,
         }
       }`,
     variables: { id: 1 },
