@@ -5,6 +5,8 @@ import '../scss/companies.scss';
 import '../scss/footer.scss';
 
 import menuPhone from '../assets/menuPhone';
+import loadingPage from '../assets/loadingPage';
+import menuNavigation from '../assets/menuNavigation';
 
 const main = () => {
   const companiesPhoneButton = document.querySelector('.companiesPhoneButton');
@@ -28,4 +30,6 @@ const main = () => {
 window.addEventListener('load', () => {
   menuPhone();
   main();
+  loadingPage();
+  menuNavigation();
 });

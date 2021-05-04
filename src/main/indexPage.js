@@ -9,6 +9,8 @@ import '../scss/topBarMenuDesktop.scss';
 import secrets from '../assets/secrets';
 import contactForm from '../assets/contactForm';
 import menuPhone from '../assets/menuPhone';
+import menuNavigation from '../assets/menuNavigation';
+import loadingPage from '../assets/loadingPage';
 import { scrollTo } from '../assets/scrollTo';
 
 const choseLanguageText = document.querySelector('.choseLanguageText');
@@ -102,6 +104,8 @@ languageButton.addEventListener('click', () => {
 window.addEventListener('load', () => {
   contactForm();
   menuPhone();
+  menuNavigation();
+  loadingPage();
   scrollTo('joinUs', 'choseLanguageList');
 });
 

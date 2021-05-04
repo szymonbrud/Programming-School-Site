@@ -5,6 +5,7 @@ import '../scss/topBarMenuDesktop.scss';
 import '../scss/footer.scss';
 
 import MenuPhone from '../assets/menuPhone';
+import loadingPage from '../assets/loadingPage';
 
 const aboutArticles = [
   {
@@ -53,4 +54,5 @@ const generateTheArticles = () => {
 window.addEventListener('load', () => {
   MenuPhone();
   generateTheArticles();
+  loadingPage();
 });

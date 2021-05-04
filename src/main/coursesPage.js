@@ -6,9 +6,13 @@ import '../scss/topBarMenuDesktop.scss';
 
 import menuPhone from '../assets/menuPhone';
 import secrets from '../assets/secrets';
+import menuNavigation from '../assets/menuNavigation';
+import loadingPage from '../assets/loadingPage';
 
 window.addEventListener('load', () => {
   menuPhone();
+  menuNavigation();
+  loadingPage();
 });
 
 let languages = [];
