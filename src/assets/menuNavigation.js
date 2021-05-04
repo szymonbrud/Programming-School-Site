@@ -8,8 +8,6 @@ export default () => {
   const menuItemLinks = document.querySelectorAll('.menuItemLink');
   const menuItemLinksPhone = document.querySelectorAll('.menuItemIdentify');
 
-  console.log(menuItemLinks);
-
   menuSettings.forEach((menuElemenet, index) => {
     if (`${mainPath}${menuElemenet}` === pathname) {
       menuItemLinks[index].classList.add('menuItemLinkActive');
