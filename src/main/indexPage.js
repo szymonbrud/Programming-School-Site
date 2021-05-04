@@ -9,6 +9,7 @@ import '../scss/topBarMenuDesktop.scss';
 import secrets from '../assets/secrets';
 import contactForm from '../assets/contactForm';
 import menuPhone from '../assets/menuPhone';
+import { scrollTo } from '../assets/scrollTo';
 
 const choseLanguageText = document.querySelector('.choseLanguageText');
 const languageButton = document.querySelector('.languageFlexButton');
@@ -101,6 +102,7 @@ languageButton.addEventListener('click', () => {
 window.addEventListener('load', () => {
   contactForm();
   menuPhone();
+  scrollTo('joinUs', 'choseLanguageList');
 });
 
 fetch(secrets.api, {
@@ -119,10 +121,7 @@ fetch(secrets.api, {
 })
   .then((res) => res.json())
   .then((res) => {
-    console.log(res);
     res.data.offersByLvls.forEach((arg) => {
-      console.log(arg.programmingLanguage);
-
       //1 pogrupować na języki[]
       //zrobić divy danych poziomów
       //po zrobieniu kontenera iterowaćpo liniach
@@ -131,7 +130,6 @@ fetch(secrets.api, {
       let allText = '';
       const text = arg.willLearn.split('\n');
       text.forEach((textElement) => {
-        console.log(textElement);
         allText += `<p class="willLearn">-${textElement}</p>`;
       });
       levels.innerHTML =

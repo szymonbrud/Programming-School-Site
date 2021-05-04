@@ -109,22 +109,57 @@ body {
 }
 
 .joinUs {
-  font-family: 'Roboto ';
+  font-family: 'Roboto';
   color: white;
   font-size: 16px;
   width: 107px;
   height: 44px;
   background-color: #78dca6;
   border: 0px;
-  border-right: 3px solid #517b64;
+  position: relative;
+  cursor: pointer;
+
+  &:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #517b64;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 0;
+
+    transition: .2s width, .0s .3s font-size;
+  }
+
+  &:hover{
+    &:before{
+      content: 'join us';
+      font-size: 16px;
+      width: 100%;
+    }
+  }
 
   @media ($desktop) {
     width: 203px;
     height: 58px;
-    border-right: 5px solid #517b64;
     font-size: 24px;
     font-family: 'Roboto Mono';
-  }
+
+    &:before{
+        width: 5px;
+    }
+
+    &:hover{
+      &:before{
+          content: 'join us';
+          font-size: 24px;
+        }
+      }
+    }
 }
 
 .choseLanguageList {
@@ -133,7 +168,6 @@ body {
   padding-bottom: 77px;
   background-color: #fafafa;
   margin: 54px 0 0 0;
-  // height: 315px;
 
   @media ($desktop) {
     background-color: white;
@@ -199,6 +233,11 @@ body {
   @media ($desktop) {
     position: absolute;
   }
+
+  &:hover{
+    cursor: pointer;
+    border: 1px solid black;
+  }
 }
 .choseLanguageText {
   color: #585757;
@@ -220,6 +259,8 @@ body {
   flex-shrink: 0;
   position: relative;
   top: -2px;
+
+  
 }
 
 .choseLanguageIcon {
@@ -232,7 +273,6 @@ body {
 
 
 .languagesList {
-  
   margin: 22px 0 0 45px;
   color: #929292;
   position: relative;
@@ -241,6 +281,13 @@ body {
   &:first-child{
     margin-top: 37px 0 0 45px;
   }
+
+  &:hover{
+    cursor: pointer;
+    color: black;
+  }
+
+  transition: .05s color;
 }
 
 .aboutWrapper{
@@ -302,13 +349,47 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border-right: 5px solid #932020;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #932020;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 0;
+
+    transition: .2s width, .0s .3s font-size;
+  }
+
+  &:hover{
+    &:before{
+      content: 'więcej';
+      font-size: 16px;
+      width: 100%;
+    }
+  }
 
   @media($desktop){
     margin: 75px 0 0 0;
     width: 203px;
     height: 58px;
     font-size: 24px;
+
+    &:before{
+      width: 5px;
+    }
+
+    &:hover{
+      &:before{
+          font-size: 24px;
+        }
+    }
   }
 }
 
