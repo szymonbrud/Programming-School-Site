@@ -17,6 +17,7 @@ import { scrollTo } from '../assets/scrollTo';
 const choseLanguageText = document.querySelector('.choseLanguageText');
 const languageButton = document.querySelector('.languageFlexButton');
 const coursesClipBoard = document.querySelector('.coursesClipBoard');
+const headerTextCourse = document.querySelector('.headerTextCourse');
 
 let courses = null;
 let languages = [];
@@ -104,6 +105,7 @@ const editListOfProgrammingHTML = (list) => {
                       coursesEach.level === levelsArray[0] &&
                       arg.programmingLanguage === coursesEach.programmingLanguage
                     ) {
+                      headerTextCourse.style.display = 'block';
                       coursesClipBoard.innerHTML +=
                         '<div class="coursesButton"><p class="coursesTitle">' +
                         coursesEach.title +
@@ -114,7 +116,7 @@ const editListOfProgrammingHTML = (list) => {
                         '</p>' +
                         `<p class="coursesDesc">${coursesEach.desc}...</p>` +
                         `<div class="coursesImage" style="background-image:url("${coursesEach.image.url}");"></div>` +
-                        '<button class="showMoreCourses">Zapisz się</button>' +
+                        '<button class="showMoreCourses">Sing up</button>' +
                         '</div>';
                     }
                   });
