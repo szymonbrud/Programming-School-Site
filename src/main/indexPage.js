@@ -5,7 +5,6 @@ import '../scss/menuPhone.scss';
 import '../scss/topBarMenuPhone.scss';
 import '../scss/footer.scss';
 import '../scss/topBarMenuDesktop.scss';
-import '../scss/prices.scss';
 
 import secrets from '../assets/secrets';
 import contactForm from '../assets/contactForm';
