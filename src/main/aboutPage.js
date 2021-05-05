@@ -9,19 +9,19 @@ import loadingPage from '../assets/loadingPage';
 
 const aboutArticles = [
   {
-    title: 'Nasza kadra nauczycielska',
+    title: 'Our teaching staff',
     desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. ',
     imgPath: 'aboutPhoto1.png',
   },
   {
-    title: 'Zdalne Nauczanie',
+    title: 'Remote Teaching',
     desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. ',
     imgPath: 'aboutPhoto2.jpg',
   },
   {
-    title: 'Współpraca',
+    title: 'Cooperation',
     desc:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non consectetur sapien. ',
     imgPath: 'aboutPhoto3.png',

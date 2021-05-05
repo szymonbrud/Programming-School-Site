@@ -44,7 +44,7 @@ const generateTheCoursesHTML = () => {
         <p class="courseElementPrice">
           ${course.price}PLN
         </p>
-        <a class="courseElementButton">zapisz się</a>
+        <a class="courseElementButton">sign up</a>
       </article>
     `;
 
