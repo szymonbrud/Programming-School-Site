@@ -1,8 +1,17 @@
 ## Programming-School-Site
 
-# how to run
+### How to run as viewer
 
-- add secrets.js to assets folder and contact with administration to get api key to CMS
 - yarn
 - yarn start
-- open html file
+- go to http://localhost:9000
+
+
+***
+
+### Run as owner
+
+- yarn
+- add the key to cms to secret.js file 
+- yarn start
+- go to http://localhost:9000
